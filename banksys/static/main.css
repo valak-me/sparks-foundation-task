@@ -1,0 +1,94 @@
+.naam{
+    color: whitesmoke;
+}
+
+.shdtest {
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 1%;
+    margin-top: 50px;
+    background-image: linear-gradient(cornflowerblue, mediumpurple);
+    box-shadow: 0px 0px 5px 3px grey;
+    position: relative;
+}
+body{
+    background-image: linear-gradient(to top,darkgray,dimgrey);
+}
+
+.btn1{
+    color: white;
+    background-color: lightgrey;
+    background-image: linear-gradient(to right,black,grey);
+    border: 6px solid black;
+    border-radius: 10%;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px 6px rgba(255,255,255,0.4);
+}
+.hed{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+.test{
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    padding: 20px;
+}
+td{
+    font-size: 1.25em;
+}
+.tst1{
+    font-weight: 900;
+}
+.tst2{
+    color: rgba(245,245,245,0.9);
+}
+.btn1:hover {
+  background-color: yellow;
+}
+.button-paginator{
+	margin: 50px auto;
+	text-align: center;
+	width: 90%;
+    position: absolute;
+}
+
+.button-paginator a{
+	display: inline-block;
+	background-color: inherit;
+	padding: 15px 20px;
+	margin: 3px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.button-paginator a:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+	border-radius: 100%;
+	opacity: 0;
+	transition: opacity 1.4s;
+	z-index: -1;
+}
+
+.button-paginator a:hover:not(.current)::after{
+    opacity: 1;
+}
+
+.button-paginator a:hover{
+	color: #fff;
+    font-size: 30px;
+}
+
+.button-paginator .current{
+	background: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+}
